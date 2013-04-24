@@ -1,0 +1,35 @@
+#site-header {
+  box-shadow: 0 5px 6px -5px rgba(0, 0, 0, 0.3);
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+}
+
+#site-header h1 {
+	margin-bottom: 20px;
+}
+
+#site-header h1 img {
+	transition: all 0.3s ease;
+}
+
+#site-header h1 a {
+	color: #000;
+	text-decoration: none;
+}
+
+/* mini-header */
+#site-header.mini h1 {
+  font-size: 30px;
+  width: 300px;
+  line-height: 70px;
+}
+
+#site-header.mini img {
+	width: 70px;
+	height: auto;
+}
+
+#site-header.mini li a {
+  padding: 10px 5px;
+  font-size: 14px;
+}

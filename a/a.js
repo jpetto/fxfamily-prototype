@@ -1,14 +1,3 @@
-/*
-***** ALERT! *****
-
-The code below that is re-calculating page height when loading
-new content is being obviated by a min-height set in common.css.
-
-We wanted to see how the page looked with an ever present
-scroll bar to prevent sideways jumping in Firefox when loading
-tall content.
-*/
-
 var $fam_content = $('#family-content');
 
 // if we're not on the index page, store the content displayed
@@ -54,7 +43,6 @@ var show_product = function(key, href, reverse) {
 
     setTimeout(function() {
       // update height of $main
-      // ***** This code is being obviated by CSS for right now! *****
       $main.animate({
         'height': new_product.height()
       }, 300, function() {
@@ -87,7 +75,6 @@ var show_product = function(key, href, reverse) {
       $current.remove();
 
       // update height of $main
-      // ***** This code is being obviated by CSS for right now! *****
       $main.animate({
         'height': new_product.height()
       }, 300);

@@ -3068,6 +3068,14 @@ nav.menu-bar ul li:first-child a {
   }
 }
 
+html {
+  /*
+  Force scroll bar rendering to avoid right/left shift
+  when content height changes. Kudos to @alexgibson.
+  */
+  overflow-y: scroll;
+}
+
 #outer-wrapper {
   position: relative;
 }
@@ -3079,9 +3087,6 @@ nav.menu-bar ul li:first-child a {
 
 #main-content {
   position: relative;
-  /* this is obviating the JS that re-calculates height
-  when loading new content */
-  min-height: 1200px;
 }
 
 .fxfamily-content {
